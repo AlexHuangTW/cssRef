@@ -1,0 +1,45 @@
+/* start overriding default browser styles */
+
+* {
+    margin: 0;
+    padding: 0;
+    border: none;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+
+    background-color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
+}
+
+footer {display: none; }
+
+header {
+    background-color: rgb(94, 94, 94);
+    margin-bottom: 40px;
+}
+
+main {text-align: center;}
+
+main > article {
+    text-align: left;
+    display: inline-block;
+    width: 25%;
+
+    border: thin solid white;
+    border-radius: 8px;
+    margin: 0 12px;
+}
+
+/* selectors always start with a hash */
+#todo {border: 4px solid gray;}
+#inprogress {border: 4px solid green;}
+
+article:first-of-type h2 {
+    color: grey;
+}
+
+#inprogress .inprogress {color: rgb(222, 115, 27);}
